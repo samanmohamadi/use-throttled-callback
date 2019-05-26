@@ -12,6 +12,7 @@ Or with npm:
 npm i use-throttled-effect --save
 ```
 
+#Example
 ```javascript
 import React, { useState } from 'react';
 import { useThrottledEffect } from 'use-throttled-effect';
@@ -21,7 +22,6 @@ export default function Input() {
   const [count, setCount] = useState(0);
 
   useThrottledEffect(()=>{
-    // do some thing here
     console.log(counter)
   }, 1000,[counter]);
 
