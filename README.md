@@ -23,7 +23,7 @@ export default function Input() {
 
   useThrottledEffect(()=>{
     console.log(count)
-  }, 1000,[counter]);
+  }, 1000,[count]);
 
 
   // Increment the counter.
