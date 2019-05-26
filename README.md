@@ -22,7 +22,7 @@ export default function Input() {
   const [count, setCount] = useState(0);
 
   useThrottledEffect(()=>{
-    console.log(counter)
+    console.log(count)
   }, 1000,[counter]);
 
 
@@ -32,7 +32,7 @@ export default function Input() {
   }, 1000);
   
   return (
-    {counter}
+    {count}
   );
 }
 ```
