@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-export const useThrottledEffect = (callback, limit) => {
+export const useThrottledEffect = (callback, limit, deps = []) => {
   // const [throttledValue, setThrottledValue] = useState(value);
   const lastRan = useRef(Date.now());
 
@@ -17,6 +17,6 @@ export const useThrottledEffect = (callback, limit) => {
         clearTimeout(handler);
       };
     },
-    [callback, limit]
+    [limit, ...deps],
   );
 };
