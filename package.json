@@ -1,6 +1,6 @@
 {
   "name": "use-throttled-effect",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Throttled effect hook for react",
   "main": "lib/index.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "url": "https://github.com/samanmohamadi/use-throttled-effect/issues"
   },
   "peerDependencies": {},
-  "homepage": "https://github.com/samanamohamadi/use-throttled-effect#readme",
+  "homepage": "https://github.com/samanmohamadi/use-throttled-effect#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",

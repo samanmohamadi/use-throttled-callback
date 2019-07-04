@@ -1,11 +1,11 @@
 import { useEffect, useRef } from 'react';
 
 export const useThrottledEffect = (callback, limit, deps = []) => {
-  // const [throttledValue, setThrottledValue] = useState(value);
   const lastRan = useRef(Date.now());
 
   useEffect(
     () => {
+      console.log([limit, ...deps]);
       const handler = setTimeout(function() {
         if (Date.now() - lastRan.current >= limit) {
           callback();
@@ -20,3 +20,5 @@ export const useThrottledEffect = (callback, limit, deps = []) => {
     [limit, ...deps],
   );
 };
+
+export default useThrottledEffect;
