@@ -16,7 +16,7 @@ export const useThrottledEffect = (callback, delay, deps = []) => {
         clearTimeout(handler);
       };
     },
-    [delay, callback, ...deps],
+    [delay, ...deps],
   );
 };
 

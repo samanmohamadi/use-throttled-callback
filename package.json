@@ -1,6 +1,6 @@
 {
   "name": "use-throttled-effect",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Throttled effect hook for react",
   "main": "lib/index.js",
   "scripts": {
